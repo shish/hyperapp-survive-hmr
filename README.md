@@ -8,5 +8,7 @@ Use like:
 ```
 import { survive_hmr } from "@shish2k/hyperapp-survive-hmr";
 
-survive_hmr(app({...}));
+let dispatch = app({...})
+
+survive_hmr(dispatch, module);
 ```

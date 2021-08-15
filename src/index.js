@@ -1,5 +1,4 @@
-/* eslint-disable no-undef */
-export function survive_hmr(dispatch) {
+export function survive_hmr(dispatch, module) {
   if (typeof module !== "undefined" && module.hot) {
     module.hot.dispose(function(data) {
       dispatch(function(state) {
