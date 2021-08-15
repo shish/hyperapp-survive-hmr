@@ -8,9 +8,6 @@
   ],
   "main": "dist/hyperappSurviveHMR.js",
   "module": "src/index.js",
-  "peerDependencies": {
-    "hyperapp": "^2.0.0"
-  },
   "devDependencies": {
     "@babel/preset-env": "^7.12.11",
     "babel-eslint": "^10.1.0",
