@@ -1,4 +1,4 @@
-import { survive_hmr } from "../src";
+import { SurviveHMR } from "../src";
 
 function dispatch(action, args) {
   action({}, args);
@@ -7,6 +7,9 @@ function dispatch(action, args) {
 describe("survive_hmr", () => {
   it("Should save state before HMR, and reload it after", () => {
     // TODO: test
-    survive_hmr(dispatch);
+    let [effect, props] = SurviveHMR(module, []);
+    expect(effect).not.toEqual(null);
+    expect(props).not.toEqual(null);
+    effect(dispatch, props);
   });
 });

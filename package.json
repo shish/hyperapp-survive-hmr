@@ -1,6 +1,6 @@
 {
   "name": "@shish2k/hyperapp-survive-hmr",
-  "version": "1.0.1",
+  "version": "2.0.0",
   "description": "Save state before hot module reload, load state after it",
   "keywords": [
     "hyperapp",
